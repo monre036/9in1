@@ -27,22 +27,38 @@ body {
 
 .box {
     position: relative;
+}
+
+.box {
+    position: relative;
     width: 150px;
     height: 150px;
-    top: 40px;
     margin-left: auto;
     margin-right: auto;
     background-color: #ff5733;
     box-shadow: -250px 200px #33ff57, 250px 400px #5733ff;
 }
 
-.box::before {
-    content: "";
+.box::after {
+    content: '';
     position: absolute;
+    top: 0;
+    left: -250px;
     width: 150px;
     height: 150px;
-    left: -250px;
-    background-color: #aaff33;
+    background-color: #ffd633;
     border-radius: 50%;
-    /* box-shadow: -250px 200px #33ff57, 250px 400px #5733ff; */
+    box-shadow: 250px 400px #33ffd6, 500px 200px #ff33d6;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    background-color: #aaff33;
+    border-radius: 30%;
+    box-shadow: 250px -200px #33aaff, -250px 200px #d633ff;
 }
