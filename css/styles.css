@@ -42,7 +42,18 @@ body {
     width: 150px;
     height: 150px;
     left: -250px;
-    background-color: #aaff33;
+    background-color: #ffd633;
     border-radius: 50%;
-    /* box-shadow: -250px 200px #33ff57, 250px 400px #5733ff; */
+    box-shadow: 250px 400px #33ffd6, 500px 200px #ff33d6;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 250px;
+    background-color: #33aaff;
+    border-radius: 30%;
+    box-shadow: -500px 400px #d633ff, -250px 200px #aaff33;
 }
